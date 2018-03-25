@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mockup-Copy" transform="translate(-322.000000, -471.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Billboard">
+                <g id="btn-primario" transform="translate(61.000000, 449.000000)">
+                    <g id="btn-content" transform="translate(38.000000, 15.000000)">
+                        <path d="M241,15.4999802 C241,15.2929384 240.880038,15.018031 240.758322,14.8846259 L233.901254,7.27925774 C233.581109,6.93375562 233.062448,6.8937162 232.689219,7.24436305 C232.355531,7.55783364 232.347216,8.16920641 232.65579,8.50960854 L238.160173,14.6050658 L223.85715,14.6050658 C223.383746,14.6050658 223,15.0056389 223,15.4998013 C223,15.9939637 223.383746,16.3945815 223.85715,16.3945815 L238.160173,16.3945815 L232.65579,22.4900567 C232.347259,22.8304141 232.369159,23.4267553 232.689219,23.7552574 C233.027133,24.1020569 233.585995,24.0711885 233.901254,23.7203627 L240.758322,16.1150214 C240.9598,15.9087402 240.996614,15.7100641 241,15.4999802 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

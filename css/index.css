@@ -1,0 +1,353 @@
+/**
+    Declarations
+*/
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_cJD3gnD_vx3rCs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_bZF3gnD_vx3rCs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/**
+    General
+*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 100%;
+    line-height: 1.87rem;
+    margin: 0rem; 
+}
+
+/**
+    Typography
+*/
+
+strong, .bold {
+    font-weight: 600;
+}
+
+.h1, h1, .h2, h2, .h3, h3, .h4, h4 {
+    font-weight: 600;
+    margin: 0rem;
+}
+
+.h1, h1 {
+    font-size: 2.81rem;
+    line-height: 3.75rem;
+}
+
+.h2, h2 {
+    font-size: 2.37rem;
+    line-height: 3.75rem;    
+}
+
+.h3, h3 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.h4, h4 {
+    font-size: 1.12rem;
+}
+
+
+/**
+    Orientation
+*/
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-baseline {
+    display: flex;
+    align-items: baseline;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/**
+    Links and buttons
+*/
+
+.link, a {
+    color: #07BED6;
+    text-decoration: underline;
+}
+
+.link, a:hover {
+    color: #000000
+}
+
+.bold-link {
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    color: #F75AB5;
+} 
+
+.bold-link:hover{
+    text-decoration: underline;
+    color: #F75AB5;
+}
+
+.bold-link.bold-link-box {
+    background-color: #ffffff;
+    padding: 0.81rem 1.25rem;
+    border-radius: 0.31rem;
+    box-shadow: 0 0.125rem 0.56rem 0 #DEE0E7;
+}
+
+.bold-link.bold-link-box:hover{
+    color: #000000;
+    box-shadow: 0 2px 20px 0 #DEE0E7;
+    text-decoration: none;
+}
+
+.button {
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0rem 0rem 0.625rem 0rem;
+}
+
+.button:hover {
+    border-bottom: 0.125rem solid currentColor;
+    color: #ffffff;
+}
+
+.button.button-pill {
+    background-color: transparent;
+    border: 0.125rem solid #ffffff;
+    border-radius: 1.75rem;
+    padding: 0.94rem 2.37rem;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.button.button-pill:hover {
+    background-color: #ffffff;
+    color: #F75AB5;
+    border: 0.125rem solid #ffffff;
+}
+
+.button.button-pill.button-pill-full {
+    background-color: #FFBD06;
+    border: none;
+    box-shadow: 0 2px 30px 0 #DEE0E7;
+}
+
+.button.button-pill.button-pill-full:hover {
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+/**
+    Color
+*/
+
+.yellow {
+    color: #FFBD06;
+}
+
+.pink {
+    color: #F75AB5;
+}
+
+.blue {
+    color: #07BED6;
+}
+
+.black {
+    color: #000000;
+}
+
+.black:hover {
+    color: #000000;
+}
+
+.bg--yellow {
+    background-color: #FFBD06;
+}
+
+/**
+    Spacing
+*/
+
+.header--spacing {
+   padding: 3.125rem 0rem 6.25rem 0rem;
+}
+
+.header__nav-items--spacing {
+    margin: 0rem 2.19rem 0rem 0rem;
+}
+
+.billboard__h1--spacing {
+    margin-bottom: 2rem;
+}
+
+.billboard__description--spacing {
+    margin: 0rem 0rem 3.75rem 0rem;
+    padding: 0rem 1.25rem;
+    border-left: 0.125rem solid #000000;
+}
+
+.billboard__button--spacing {
+    margin-bottom: 7.5rem;
+    display: inline-block;
+}
+
+.about__h2--spacing {
+    margin: 2rem 0 0 0;
+}
+
+.about__text--spacing {
+    margin-bottom: 6rem;
+    padding-right: 2.25rem;
+}
+
+.about__ul--spacing {
+    padding: 0;
+}
+
+.about__toolbox--spacing {
+    padding-bottom: 4rem;
+}
+
+.about__arrow--spacing {
+    padding-left: 0.625rem;
+}
+
+.works__h2--spacing {
+    margin-bottom: 3.75rem;
+    margin-top: 5.5rem;
+}
+
+.works__icon--spacing {
+    padding-right: 0.625rem;
+}
+
+.works__category--spacing {
+    margin-bottom: 2.7rem;
+}
+
+.works__buttons--spacing {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.img-box--spacing {
+    margin-bottom: 5.625rem;
+}
+
+/**
+    Misc
+*/
+
+.about__text--separator {
+    border-right: 1px dashed #DEE0E7;
+}
+
+/**
+    Components
+*/
+
+.img-box--pink {
+    border-radius: 0.375rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 60px 0 rgba(240,114,187,0.15);   
+}
+
+.img-box--yellow {
+    border-radius: 0.375rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 60px 0 rgba(255,208,77,0.15);    
+}
+
+.img-box--blue {
+    border-radius: 0.375rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 60px 0 rgba(7,190,214,0.15);   
+}
+
+.img-box__image {
+    width: 50%;
+}
+
+.img-box__text {
+    width: 50%;
+    float: left;
+    padding: 3.43rem 3.43rem 0 3.43rem;
+}
+
+.img-box__image--vertical {
+    width: 100%;
+}
+
+.img-box__text--vertical {
+    width: 100%;
+    padding: 3.43rem 3.43rem 0 3.43rem;
+}
+
+.box {
+    background: #FFFFFF;
+    box-shadow: 0 2px 33px 0 #DEE0E7;
+    border-radius: 0.5rem;
+}
+
+.box__text {
+    padding: 1.25rem;
+}
+
+.featured-text {
+    border-top: 1px dashed #DEE0E7;
+    border-bottom: 1px dashed #DEE0E7; 
+}
+
+.header {
+    background-image: url(../img/bg-illus.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}
+
+.about {
+    background-image: url(../img/about-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}
+
+.writing {
+    background-image: url(../img/writing-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
