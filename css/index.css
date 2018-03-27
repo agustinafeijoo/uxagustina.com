@@ -268,6 +268,10 @@ strong, .bold {
     margin-bottom: 5.625rem;
 }
 
+.box--spacing {
+    padding-bottom: 6rem;
+}
+
 /**
     Misc
 */
@@ -305,7 +309,7 @@ strong, .bold {
 .img-box__text {
     width: 50%;
     float: left;
-    padding: 3.43rem 3.43rem 0 3.43rem;
+    padding: 2rem 3.43rem 0 3.43rem;
 }
 
 .img-box__image--vertical {
@@ -314,7 +318,7 @@ strong, .bold {
 
 .img-box__text--vertical {
     width: 100%;
-    padding: 3.43rem 3.43rem 0 3.43rem;
+    padding: 2rem 3.43rem 1.4rem 3.43rem;
 }
 
 .box {
@@ -330,6 +334,8 @@ strong, .bold {
 .featured-text {
     border-top: 1px dashed #DEE0E7;
     border-bottom: 1px dashed #DEE0E7; 
+    padding: 3.75rem 0;
+    margin: 2rem 0;
 }
 
 .header {
