@@ -93,6 +93,10 @@ strong, .bold {
     text-align: center;
 }
 
+.position-relative {
+    position: relative;
+}
+
 /**
     Links and buttons
 */
@@ -225,6 +229,12 @@ strong, .bold {
     display: inline-block;
 }
 
+.billboard__illus--spacing {
+    position: absolute;
+    left: 4rem;
+    top: 13rem;
+}
+
 .about__h2--spacing {
     margin: 2rem 0 0 0;
 }
@@ -246,9 +256,13 @@ strong, .bold {
     padding-left: 0.625rem;
 }
 
+.works--spacing {
+    margin-top: 6rem;
+}
+
 .works__h2--spacing {
     margin-bottom: 3.75rem;
-    margin-top: 5.5rem;
+    margin-top: 3.75rem;
 }
 
 .works__icon--spacing {
@@ -270,6 +284,10 @@ strong, .bold {
 
 .box--spacing {
     padding-bottom: 6rem;
+}
+
+.footer--spacing {
+    margin-top: 2rem;
 }
 
 /**
@@ -335,14 +353,15 @@ strong, .bold {
     border-top: 1px dashed #DEE0E7;
     border-bottom: 1px dashed #DEE0E7; 
     padding: 3.75rem 0;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 750px;
 }
 
 .header {
     background-image: url(../img/bg-illus.svg);
     background-repeat: no-repeat;
     background-position: 100%;
-    background-size: cover;
+    background-size: 60% 100%;
 }
 
 .about {
