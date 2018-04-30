@@ -278,6 +278,11 @@ strong, .bold {
     margin-bottom: 2rem;
 }
 
+.carousel-cell--spacing {
+    width: 80%; 
+    margin: 0 auto;
+}
+
 .img-box--spacing {
     margin-bottom: 5.625rem;
 }
@@ -354,8 +359,16 @@ strong, .bold {
     border-bottom: 1px dashed #DEE0E7; 
     padding: 3.75rem 0;
     margin: 2rem auto;
-    max-width: 750px;
 }
+
+.carousel-cell {
+    width: 100%;
+}
+
+.main-carousel {
+    padding-bottom: 50px;
+}
+
 
 .header {
     background-image: url(../img/bg-illus.svg);
