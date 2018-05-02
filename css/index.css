@@ -278,17 +278,21 @@ strong, .bold {
     margin-bottom: 2rem;
 }
 
-.carousel-cell--spacing {
-    width: 80%; 
-    margin: 0 auto;
-}
-
 .img-box--spacing {
     margin-bottom: 5.625rem;
 }
 
 .box--spacing {
     padding-bottom: 6rem;
+}
+
+.carousel-cell--spacing {
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.testimonials__link--spacing {
+    margin-top: 4rem;
 }
 
 .footer--spacing {
