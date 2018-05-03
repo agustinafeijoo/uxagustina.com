@@ -1,0 +1,62 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M1084.235 511.999c0-12.471-7.226-29.030-14.558-37.066l-413.038-458.112c-19.284-20.811-50.526-23.223-73.007-2.102-20.1 18.882-20.601 55.708-2.014 76.212l331.558 367.162h-861.547c-28.516 0-51.631 24.129-51.631 53.895s23.115 53.897 51.631 53.897h861.547l-331.558 367.163c-18.584 20.502-17.265 56.422 2.014 76.21 20.354 20.89 54.018 19.030 73.007-2.102l413.038-458.11c12.136-12.425 14.354-24.393 14.558-37.047z"
+        ],
+        "attrs": [],
+        "width": 1084,
+        "grid": 0,
+        "tags": [
+          "arrow-right"
+        ]
+      },
+      "attrs": [],
+      "properties": {
+        "order": 7,
+        "id": 0,
+        "name": "arrow-right",
+        "prevSize": 32,
+        "code": 59648
+      },
+      "setIdx": 0,
+      "setId": 3,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "icomoon"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon"
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}

@@ -103,7 +103,9 @@ strong, .bold {
 
 .link, a {
     color: #07BED6;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 0.0625rem solid currentColor;
+    transition: color 0.2s ease-out;
 }
 
 .link, a:hover {
@@ -113,12 +115,14 @@ strong, .bold {
 .bold-link {
     font-weight: 600;
     text-decoration: none;
+    border-bottom: 0.0625rem solid transparent; 
     display: inline-block;
     color: #F75AB5;
+    transition: border-bottom 0.3s ease-in;
 } 
 
 .bold-link:hover{
-    text-decoration: underline;
+    border-bottom: 0.0625rem solid currentColor;
     color: #F75AB5;
 }
 
@@ -127,6 +131,8 @@ strong, .bold {
     padding: 0.81rem 1.25rem;
     border-radius: 0.31rem;
     box-shadow: 0 0.125rem 0.56rem 0 #DEE0E7;
+    border-bottom: none;
+    transition: color 0.3s ease-out, box-shadow 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .bold-link.bold-link-box:hover{
@@ -140,8 +146,13 @@ strong, .bold {
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     text-decoration: none;
+    border-bottom: none;
     color: #ffffff;
     padding: 0rem 0rem 0.625rem 0rem;
+}
+
+a.button {
+    transition: border-bottom 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 
 .button:hover {
@@ -167,6 +178,7 @@ strong, .bold {
     background-color: #FFBD06;
     border: none;
     box-shadow: 0 2px 30px 0 #DEE0E7;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .button.button-pill.button-pill-full:hover {
@@ -196,6 +208,10 @@ strong, .bold {
 
 .black:hover {
     color: #000000;
+}
+
+.bold-link.pink:hover, .bold-link.yellow:hover, .bold-link.blue:hover {
+    color: #000000
 }
 
 .bg--yellow {
@@ -305,6 +321,10 @@ strong, .bold {
 
 .about__text--separator {
     border-right: 1px dashed #DEE0E7;
+}
+
+.about__arrow {
+    font-size: 0.8rem;
 }
 
 /**
