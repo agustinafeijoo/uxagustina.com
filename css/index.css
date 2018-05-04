@@ -218,6 +218,14 @@ a.button {
     background-color: #FFBD06;
 }
 
+.bg--blue {
+    background-color: #07BED6;
+}
+
+.bg--pink {
+    background-color: #F75AB5;
+}
+
 /**
     Spacing
 */
@@ -311,6 +319,14 @@ a.button {
     margin-top: 4rem;
 }
 
+.hire-me__text--spacing {
+    padding: 2rem 0 4rem 0;
+}
+
+.hire-me__btn--spacing {
+    margin-bottom: 6rem;
+}
+
 .footer--spacing {
     margin-top: 2rem;
 }
@@ -372,6 +388,11 @@ a.button {
     background: #FFFFFF;
     box-shadow: 0 2px 33px 0 #DEE0E7;
     border-radius: 0.5rem;
+}
+
+a.box:hover {
+
+    box-shadow: 0 2px 33px 0 rgba(7,190,214,0.50);
 }
 
 .box__text {
