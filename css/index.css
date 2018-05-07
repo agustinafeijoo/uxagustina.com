@@ -398,10 +398,15 @@ a.button {
 .box__text {
     padding: 1.25rem;
     transition: box-shadow 0.3s ease-in;
+    flex: 1;
 }
 
 .box__text:hover {
     box-shadow: 0 2px 33px 0 rgba(7,190,214,0.50);
+}
+
+.box__parent {
+    display: flex;
 }
 
 .featured-text {
