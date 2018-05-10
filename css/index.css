@@ -2,6 +2,7 @@
     Declarations
 */
 
+
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -113,7 +114,7 @@ p {
     transition: color 0.2s ease-out;
 }
 
-.link, a:hover {
+.link:hover, a:hover {
     color: #000000
 }
 
@@ -184,6 +185,10 @@ a.button {
     border: none;
     box-shadow: 0 2px 30px 0 #DEE0E7;
     transition: opacity 0.3s ease-in-out;
+}
+
+.button.button-pill.button-pill-full.bg--pink {
+    background-color: #F75AB5;
 }
 
 .button.button-pill.button-pill-full:hover {
@@ -371,7 +376,7 @@ a.button {
 }
 
 .img-box__image {
-    width: 50%;
+    border-radius: 0 0.4rem 0.4rem 0;
 }
 
 .img-box__text {
@@ -382,6 +387,7 @@ a.button {
 
 .img-box__image--vertical {
     width: 100%;
+    border-radius: 0.4rem 0.4rem 0 0;
 }
 
 .img-box__text--vertical {
@@ -393,20 +399,26 @@ a.button {
     background: #FFFFFF;
     box-shadow: 0 2px 33px 0 #DEE0E7;
     border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease-in;
 }
 
 .box__text {
     padding: 1.25rem;
-    transition: box-shadow 0.3s ease-in;
-    flex: 1;
+    display: inline-block;
+    border-bottom: none;
 }
 
-.box__text:hover {
+.box:hover {
     box-shadow: 0 2px 33px 0 rgba(7,190,214,0.50);
 }
 
 .box__parent {
     display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.box__child {
+    flex: 1;
 }
 
 .featured-text {
@@ -423,7 +435,6 @@ a.button {
 .main-carousel {
     padding-bottom: 3rem;
 }
-
 
 .header {
     background-image: url(../img/bg-illus.svg);
@@ -443,4 +454,20 @@ a.button {
     background-image: url(../img/writing-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/**
+    Responsive
+*/
+
+@media screen and (max-width:1139px) {
+    .hide-small-desktop {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header {
+        background-size: 50% 100%;
+    }
 }
