@@ -284,7 +284,7 @@ a.button {
 }
 
 .about__toolbox--spacing {
-    padding-bottom: 4rem;
+    padding: 0 0 4rem 2rem;
 }
 
 .about__arrow--spacing {
@@ -383,7 +383,7 @@ a.button {
 }
 
 .img-box__text {
-    padding: 2rem 3.43rem 0 3.43rem;
+    padding: 2rem 3.43rem 1.4rem 3.43rem;
 }
 
 .img-box__image--vertical {
@@ -496,7 +496,14 @@ a.button {
     }
 
     .img-box__text {
-        padding: 2rem 2rem 0 2rem;
+        padding: 2rem 2rem 1.4rem 2rem;
+    }
+
+}
+
+@media screen and (min-width: 820px) and (max-width: 940px) {
+    .img-box__text--vertical {
+        padding: 2rem;
     }
 
 }
@@ -526,6 +533,19 @@ a.button {
         display: block;
     }
 
+    .img-box--mobile-spacing {
+        margin-bottom: 5.625rem !important;
+    }
+
+    .img-box__image {
+        height: 300px;
+    }
+
+    .img-box__image--vertical {
+        height: 300px;
+        object-fit: cover;
+    }
+
 
 }
 
@@ -553,5 +573,19 @@ a.button {
     .about__toolbox--spacing {
         padding-bottom: 2rem;
         padding-top: 2rem;
+    }
+
+    .billboard__button--spacing {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .img-box__text {
+        padding: 1.5rem;
+    }
+
+    .img-box__text--vertical {
+        padding: 1.5rem;
     }
 }
