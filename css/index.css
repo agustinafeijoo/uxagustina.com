@@ -584,6 +584,10 @@ a.button {
     .hide-tablet-desktop {
         display: none;
     }
+
+    .box--spacing {
+        margin-bottom: 5rem;
+    }
 }
 
 @media screen and (max-width: 390px) {
