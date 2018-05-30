@@ -36,6 +36,8 @@ body {
     font-family: 'Montserrat';
     font-weight: 300;
     font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
     line-height: 1.87rem;
     margin: 0rem; 
 }
@@ -245,7 +247,7 @@ a.button {
 }
 
 .header__nav-items--spacing {
-    margin: 0rem 2.19rem 0rem 0rem;
+    margin: 0rem 1.1rem 0rem 1.1rem;
     display: inline-block;
 }
 
@@ -317,8 +319,8 @@ a.button {
     margin-bottom: 5.625rem;
 }
 
-.box--spacing {
-    padding-bottom: 6rem;
+.box-mobile-link--spacing {
+    padding: 2rem 0 5rem 0;
 }
 
 .carousel-cell--spacing {
@@ -472,17 +474,14 @@ a.button {
     Responsive
 */
 
-@media screen and (max-width:1139px) {
+@media screen and (max-width:1140px) {
     .hide-small-desktop {
         display: none !important;
     }
 
-    .header__nav-items--spacing {
-        margin: 0rem 1.19rem 0rem 0rem;
-    }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
     .header {
         background-size: 50% 100%;
     }
@@ -492,13 +491,14 @@ a.button {
     }
 
     .box {
-        margin-bottom: 3rem;
+        margin-bottom: 3rem !important;
     }
+}
 
+@media screen and (min-width: 820px) and (max-width: 1024px) {
     .img-box__text {
         padding: 2rem 2rem 1.4rem 2rem;
     }
-
 }
 
 @media screen and (min-width: 820px) and (max-width: 940px) {
@@ -577,6 +577,12 @@ a.button {
 
     .billboard__button--spacing {
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .hide-tablet-desktop {
+        display: none;
     }
 }
 
