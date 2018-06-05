@@ -167,7 +167,7 @@ p {
 }
 
 a.button {
-    transition: border-bottom 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    transition: border-bottom 0.3s linear;
 }
 
 .button:hover {
