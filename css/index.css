@@ -79,6 +79,13 @@ p {
     color: #000000;
 }
 
+.hint {
+    font-size: 0.85rem;
+    color: #6E6E6E;
+    font-style: italic;
+    display: inline-block;
+}
+
 
 /**
     Orientation
@@ -154,7 +161,7 @@ p {
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     text-decoration: none;
-    border-bottom: none;
+    border-bottom:  0.125rem solid transparent;
     color: #ffffff;
     padding: 0rem 0rem 0.625rem 0rem;
 }
@@ -237,6 +244,7 @@ a.button {
 .bg--pink {
     background-color: #F75AB5;
 }
+
 
 /**
     Spacing
@@ -340,9 +348,14 @@ a.button {
     margin-bottom: 6rem;
 }
 
-.footer--spacing {
-    margin-top: 2rem;
+.footer__nav-items--spacing {
+    margin: 0rem 0.8rem;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+
 }
+
 
 /**
     Misc
@@ -470,6 +483,118 @@ a.button {
     background-size: cover;
 }
 
+.footer {
+    background-image: url(../img/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__icons-bg {
+    max-width: 900px;
+    margin: 8rem auto 2rem auto;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__icons-border {
+    border-radius: 24rem;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    color: #000000;
+    display: inline-block;
+    padding: 0.8rem;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer__icons-border.border-pink {
+    border: 2px solid #F75AB5;
+    box-shadow: 0 0 15px 0 rgba(247,90,181,0.20);
+    color: #F75AB5;
+    font-size: 1.7rem;
+}
+
+a:hover .footer__icons-border.border-pink {
+    background-color: #F75AB5;
+    color: #ffffff;
+}
+
+.footer__icons-border.border-linkedin {
+    border: 2px solid #0079AC;
+    box-shadow: 0 0 15px 0 rgba(0,121,172,0.20);
+    color: #0079AC;
+    font-size: 1.5rem;
+}
+
+a:hover .footer__icons-border.border-linkedin {
+    background-color: #0079AC;
+    color: #ffffff;
+}
+
+.footer__icons-border.border-dribbble {
+    border: 2px solid #CD1E5D;
+    box-shadow: 0 0 15px 0 rgba(205,30,93,0.20);
+    color: #CD1E5D;
+    font-size: 1.5rem;
+}
+
+a:hover .footer__icons-border.border-dribbble {
+    background-color: #CD1E5D;
+    color: #ffffff;
+}
+
+.footer__icons-border.border-medium {
+    border: 2px solid #1C9963;
+    box-shadow: 0 0 15px 0 rgba(28,153,99,0.20);
+    color: #1C9963;
+    font-size: 1.2rem;
+}
+
+a:hover .footer__icons-border.border-medium {
+    background-color: #1C9963;
+    color: #ffffff;
+}
+
+.footer__icons-border.border-github {
+    border: 2px solid #24292E;
+    box-shadow: 0 0 15px 0 rgba(36,41,46,0.20);
+    color: #24292E;
+    font-size: 1.5rem;
+}
+
+a:hover .footer__icons-border.border-github {
+    background-color: #24292E;
+    color: #ffffff;
+}
+
+.footer__icons-border.border-blue {
+    border: 2px solid #07BED6;
+    box-shadow: 0 0 15px 0 rgba(0,184,236,0.20);
+    color: #07BED6;
+    font-size: 1.1rem;
+}
+
+a:hover .footer__icons-border.border-blue {
+    background-color: #07BED6;
+    color: #ffffff;
+}
+
+.footer__icons-label {
+    opacity: 0;
+    padding-left: 0.375rem;
+}
+
+a:hover .footer__icons-label {
+    opacity: 1;
+}
+
+
+
 /**
     Responsive
 */
@@ -478,7 +603,6 @@ a.button {
     .hide-small-desktop {
         display: none !important;
     }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -492,20 +616,26 @@ a.button {
 
     .box {
         margin-bottom: 3rem !important;
+    } 
+    
+}
+
+@media screen and (max-width: 940px) {
+    .footer__icons-label {
+        display: none;
     }
 }
 
 @media screen and (min-width: 820px) and (max-width: 1024px) {
     .img-box__text {
         padding: 2rem 2rem 1.4rem 2rem;
-    }
+    }   
 }
 
 @media screen and (min-width: 820px) and (max-width: 940px) {
     .img-box__text--vertical {
         padding: 2rem;
     }
-
 }
 
 @media screen and (max-width: 820px) {
@@ -545,8 +675,6 @@ a.button {
         height: 300px;
         object-fit: cover;
     }
-
-
 }
 
 @media screen and (max-width: 720px) {
@@ -587,6 +715,16 @@ a.button {
 
     .box--spacing {
         margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .footer__icons-bg {
+        flex-wrap: wrap;
+    }
+
+    .footer__nav-items--spacing {
+        margin: 1rem;
     }
 }
 
