@@ -396,8 +396,8 @@ a.button {
     box-shadow: 0 2px 60px 0 rgba(255,169,79,0.15);    
 }
 
-.img-box--blue {
-    box-shadow: 0 2px 60px 0 rgba(16,107,238,0.15);   
+.img-box--green {
+    box-shadow: 0 2px 60px 0 rgba(0,186,211,0.15);   
 }
 
 .img-box__image {
@@ -433,7 +433,7 @@ a.button {
 }
 
 .box:hover {
-    box-shadow: 0 2px 33px 0 rgba(0,186,211,0.50);
+    box-shadow: 0 2px 33px 0 rgba(16,107,238,0.50);
 }
 
 .img-box__parent {
