@@ -477,6 +477,7 @@ a.button {
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: 60% 100%;
+    overflow: hidden;
 }
 
 .about {
@@ -625,7 +626,15 @@ a:hover .footer__icons-label {
 
     .box {
         margin-bottom: 3rem !important;
-    } 
+    }
+    
+    .illus-tablet {
+        transform: scale(.7);
+    }
+
+    .billboard__illus--spacing {
+        top: 3rem;
+    }
     
 }
 
